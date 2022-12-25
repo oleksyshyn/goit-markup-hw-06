@@ -563,7 +563,8 @@ ul {
     margin-left: 120px;
 }
 
-.social-media .title {
+.social-media .title,
+.subscribe .title {
     margin-bottom: 16px;
 
     font-weight: 700;
@@ -602,6 +603,64 @@ ul {
 .social-media-icon {
     width: 24px;
     height: 24px;
+}
+
+.subscribe {
+    margin-left: 80px;
+    width: 453px;
+}
+
+.subscribe-form {
+    display: flex;
+}
+
+.input-subscribe {
+    padding: 8px 16px;
+    width: 264px;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: transparent;
+}
+
+.input-subscribe:focus {
+    border-color: var(--accent-color);
+    outline: none;
+}
+
+.input-subscribe::placeholder {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.6); 
+}
+
+.button-subscribe {
+    width: 165px;
+    height: 40px;
+    padding: 8px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 4px;
+    margin-left: 24px;
+    box-sizing: border-box;
+}
+
+.subscribe-icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 16px;
 }
 
 /* Modal */
@@ -755,7 +814,8 @@ ul {
     border-color: var(--accent-color);
     outline: none;
 }
-::placeholder {
+
+textarea::placeholder {
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 12px;
